@@ -1,0 +1,24 @@
+
+import './App.css'
+
+import useRandomDadJokes from './hooks/useRandomDadJokes'
+
+function App() {
+  
+  const [joke, generateJoke] = useRandomDadJokes();
+
+  
+  
+  return (
+    <>
+      <div>
+        <h1>Dad Joke Generator</h1>
+        <button onClick={generateJoke}>Generate</button>
+        <p>{joke}</p>
+        
+       </div>
+    </>
+  )
+}
+
+export default App
